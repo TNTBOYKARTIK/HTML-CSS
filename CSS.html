@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="shortcut icon" href="CSS.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS- Cascading Style Sheets</title>
+    <style>
+        /* CSS styles for the website go here */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .section p {
+            margin: 0;
+            color: #666;
+            text-align: justify;
+        }
+
+        .example {
+            margin-bottom: 40px;
+        }
+
+        .example h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .example img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS</h1>
+    </header>
+    <main>
+        <section class="section">
+            <h2>About CSS</h2>
+            <p>HTML is Just an skleton layout of a website. We need CSS to design a website,add styles to it and make it look beautiful. CSS stands for Cascading Style Sheets CSS converts an off looking HTML page with a beautiful and responsive website.</p><br><br><br>
+            <section class="example">
+                <h2>Example</h2>
+                <img src="Importance of CSS and JS.png" alt="Example Image" height="377px" width="360px" >
+            </section>
+        </section>
+
+        <section class="section">
+            <h2>CSS Selectors</h2>
+            <p>Selectors are used in CSS to target specific HTML elements and apply styles to them. CSS provides a wide range of selectors, including element selectors, class selectors, ID selectors, attribute selectors, and more. When an HTML element is given an id it serves as a unique id identifier for that element.On the other hand, When an HTML Element is given a class, It now belongs to that class.More than one element can belong to a single class but every element must have a unique id (if assigned).You can take a example more that one student can be in 7th class no student can have same Admission Number.We target Class with (.(dot)) and id with(#)</p><br><br><br>
+            <section class="example">
+                <h2>Example:-</h2>
+                <img src="CSS class .png" alt="Example Image">
+            </section>
+        </section>
+
+        <section class="section">
+            <h2>Background Property</h2>
+            <p>In CSS (Cascading Style Sheets), the background property is used to define the background styling of an element, such as a div or a body. It allows you to set various background-related properties, such as the background color, image, position, and more. <br><br>
+            The Background Color Property:- <br><br>
+            The CSS Background Color property specifices the background color of a container for example:- <br><br>
+            <section class="example">
+                <!-- <h2>Example</h2> -->
+                <img src="BG.png" alt="Example Image">
+            </section><br><br>
+            The Background Image Property:- <br><br>
+            Used to set the image as a background of a container for example div,body etc.  <br><br>
+            <section class="example">
+                <h2>Example</h2>    
+                <img src="Ex.png" alt="Example Image">
+                <h2>Output</h2>    
+
+                <img src="ExO.png" alt="Example Image">
+            </section><br><br>
+            The Background Repeat Property:-
+            Now you See that Background Image is Repeating as per the height and Width of the container so to fix this problem we have background reperat property.We can repeat our Backround on Repeat-x and Repeat-Y or No repeat and so on. Repeat-X means the background will only repeat on Horizontal direction. Repeat-Y means background will repeat on Vertical direction and No repeat means background will not repeat. <br><br> 
+            <section class="example">
+                <h2>Now background will not repeat</h2>
+                <img src="BRR.png" alt="Example Image">
+                <!-- <h2>Now background will not repeat</h2> -->
+                <img src="Rep.png" alt="Example Image">
+            </section><br><br>
+            <h1>The Background Shorthand</h1>
+            A single property can bee use to set a multiple background properties <br><br>
+            
+            <section class="example">
+                <h2>Example</h2>    
+                <img src="BBFHIED.png" alt="Example Image">
+                    <!-- <h2>Output</h2>    
+                    <img src="BBFHIED.png" alt="Example Image"> -->
+                </section>
+            </p>
+            
+                   
+        </section>
+        <section class="section">
+            <h2>MARGIN</h2>
+            <p>In CSS (Cascading Style Sheets), the margin property is used to control the spacing around an element. It defines the space between an element's border and adjacent elements or the outer edges of the containing element.The margin are adjusted from the top to left in the clockwise direction.First TOP second RIGHT third BOTTOM fourth LEFT</p>
+            
+                    <section class="example">
+                        <h2>Example</h2>
+                        <img src="Margin.png" alt="Example Image">
+                    </section>
+        </section>
+        <section class="section">
+            <h2>PADDING</h2>
+            <p>In CSS, the padding property is used to control the spacing between the content of an element and its border. It defines the space between the element's content and its border, providing internal spacing within the element.The padding are adjusted as same as MARGIN top then RIGHT then BOTTOM then LEFT.</p>
+            
+                    <section class="example">
+                        <h2>Example</h2>
+                        <img src="ALL POSSIBLE VALUES .png" alt="Example Image">
+                        <!-- <h2>Output</h2>
+                        <img src="PADDINGO.png" alt="Example Image"> -->
+                        
+                        <!-- <img src="PADDING.png" alt="Example Image"> -->
+                    </section>
+        </section>
+        <section class="section">
+            <h2>TEXT</h2>
+            <p>In CSS, the text property is not a single property but a collection of properties that are used to control the styling and presentation of text content within an HTML element. These properties include: <br><br><br>
+            
+                COLOR: <br><br>
+                The color property use to give the color to your text. For example: <br>
+                <section class="example">
+                    <h2>Example</h2>
+                    <img src="COLOR.png" alt="Example Image">
+                    <img src="COLORO.png" alt="Example Image">
+                </section>
+            Text-align: <br><br>
+            This is used for aligning our texts in a specific direction, left/right/center <br>
+            <section class="example">
+                <h2>Example</h2>
+                <img src="Text align.png" alt="Example Image">
+                <img src="Text aligno.png" alt="Example Image">
+            </section>
+            Text-Transform: <br>
+            It is used to specify uppercase and lowercase letter in a text. <br>
+            <section class="example">
+                <h2>Example</h2>
+                <img src="TT.png" alt="Example Image">
+                <img src="TTO.png" alt="Example Image">
+            </section>
+            
+            
+            </p>
+            
+                 
+        </section>
+        <section class="section">
+            <h2>FONT</h2>
+            <p>This property is used to set the font style,fonr variant,font weight,font size and the font family. <br><br><br>
+                Font-Family: <br>
+                The font family specifies the typeface that will be displayed on screen. this property is used to specify the font is applicatbe for the text.If the font has tw or more letters the it should be incolosed in Quotes <br>
+                <section class="example">
+                    <h2>Example</h2>
+                    <img src="FF.png" alt="Example Image">
+                    <img src="FFO.png" alt="Example Image">
+                </section>
+font-style: <br>
+It specifies the font style of an element. <br><br>
+
+            
+<section class="example">
+    <h2>Example</h2>
+    <img src="FS.png" alt="Example Image">
+</section>
+font-size: <br>
+It is used to specify size for text in a document. <br><br>
+<section class="example">
+    <h2>Example</h2>
+    <img src="FSI.png" alt="Example Image">
+</section>
+
+Font-weight: <br>
+This property defines how thick or thin characters are displayed. <br><br>
+<section class="example">
+    <h2>Example</h2>
+    <img src="FW.png" alt="Example Image">
+</section>
+font-variant: <br>
+The font variant describes what typeface will be selected by default when displaying text that matches its selector.<br>
+<section class="example">
+    <h2>Example</h2>
+    <img src="FV.png" alt="Example Image">
+</section>
+            </p>
+
+            
+                
+    </main>
+    
+</body>
+</html>
